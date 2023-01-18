@@ -9,4 +9,8 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+  @Get('/api/user/1')
+  getHemlo(): string {
+    return 'custom response';
+  }
 }
